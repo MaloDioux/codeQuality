@@ -1,45 +1,51 @@
-﻿using System;
+﻿using ConsoleApp1.entities;
+using ConsoleApp1.interfaces;
+using System;
 using System.Collections.Generic;
 
 /// <summary>
 /// Summary description for Class1
 /// </summary>
-public class prospectService : IService<prospect>
+/// 
+namespace ConsoleApp1.services
 {
-	public prospectService()
-	{
-		//
-		// TODO: Add constructor logic here
-		//
-	}
-
-    public int Create(prospect applicationModel)
+    public class prospectService : IService<prospect>
     {
-        throw new NotImplementedException();
-    }
+        public prospectService()
+        {
+            //
+            // TODO: Add constructor logic here
+            //
+        }
 
-    public bool Delete(Guid guid)
-    {
-        throw new NotImplementedException();
-    }
+        public int Create(prospect applicationModel)
+        {
+            throw new NotImplementedException();
+        }
 
-    public prospect GetByIdAsync(Guid guid)
-    {
-        throw new NotImplementedException();
-    }
+        public bool Delete(Guid guid)
+        {
+            throw new NotImplementedException();
+        }
 
-    public prospect GetByNameAsync(string name)
-    {
-        throw new NotImplementedException();
-    }
+        public prospect GetByIdAsync(Guid guid)
+        {
+            throw new NotImplementedException();
+        }
 
-    public List<prospect> GetListAsync()
-    {
-        throw new NotImplementedException();
-    }
+        public prospect GetByNameAsync(string name)
+        {
+            throw new NotImplementedException();
+        }
 
-    public bool UpdateAsync(prospect applicationModel)
-    {
-        throw new NotImplementedException();
+        public List<prospect> GetListAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool UpdateAsync(prospect applicationModel)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

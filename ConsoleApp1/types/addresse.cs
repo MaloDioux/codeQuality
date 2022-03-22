@@ -3,22 +3,27 @@
 /// <summary>
 /// Summary description for adresse
 /// </summary>
-public enum TypeRue
+/// 
+namespace ConsoleApp1.types
 {
-	Rue = 0,
-	Avenue
-}
-public class adresse
-{
-	
-	public adresse()
+	public enum TypeRue
 	{
-		//
-		// TODO: Add constructor logic here
-		//
+		Rue = 0,
+		Avenue
 	}
-	public string numero { get; set; }
-	public string nomRue { get; set; }
-	public TypeRue typeRue { get; set; }
-	public string ville { get; set; }
+	public class adresse
+	{
+
+		public adresse()
+		{
+			//
+			// TODO: Add constructor logic here
+			//
+		}
+		public string numero { get; set; }
+		public string nomRue { get; set; }
+		public TypeRue typeRue { get; set; }
+		public string ville { get; set; }
+	}
 }
+

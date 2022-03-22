@@ -1,9 +1,11 @@
 ﻿using System;
-
-public abstract class baseEntity
+namespace ConsoleApp1.entities
 {
-	public baseEntity()
+	public abstract class baseEntity
 	{
+		public baseEntity()
+		{
+		}
+		public Guid id { get; set; }
 	}
-	public Guid id { get; set; }
 }
