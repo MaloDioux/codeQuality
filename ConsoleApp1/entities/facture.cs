@@ -41,6 +41,6 @@ namespace ConsoleApp1.entities
 
 		public bool estPayer { get; set; }
 
-		public offre? offre { get; set; }
+        public offre? offre { get; set; }
 	}
 }
