@@ -2,21 +2,32 @@
 using System.Collections.Generic;
 
 /// <summary>
-/// Summary description for Class1
+/// Summary description for prospect
 /// </summary>
-public class prospect
+public class prospect : partenaires
 {
-	public prospect(string aRaisonSocial, List<personne> aContacts, DateTime aDateDeContact)
+	public static int count { get; set; }
+	public prospect()
+    {
+		count++;
+	}
+	public prospect(string aRaisonSocial, List<personne> aContacts, DateTime aDateDeContact, adresse aAdresse)
 	{
+		count++;
 		raisonSocial = aRaisonSocial;
 		contacts = aContacts;
 		dateDeContact = aDateDeContact;
-		//
-		// TODO: Add constructor logic here
-		//
+		adresse = aAdresse;
 	}
-    public string raisonSocial { get; set; }
-	public List<personne> contacts  { get; set; }
-	public DateTime dateDeContact { get; set; }
+	public prospect(string aRaisonSocial, List<personne> aContacts, DateTime aDateDeContact, adresse aAdresse, List<offre> aOffresProposer) : this(aRaisonSocial, aContacts, aDateDeContact, aAdresse)
+	{
+		count++;
+		offresProposer = aOffresProposer;
+	}
 	public List<offre> offresProposer { get; set; }
+
+    public override bool initialise(prospect aProspect, offre offreCourante, DateTime aDateEmission, DateTime aDatePaiment, bool aEstPayer)
+    {
+        throw new NotImplementedException();
+    }
 }

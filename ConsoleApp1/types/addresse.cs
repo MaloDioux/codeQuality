@@ -1,17 +1,17 @@
 ﻿using System;
 
 /// <summary>
-/// Summary description for Class1
+/// Summary description for adresse
 /// </summary>
 public enum TypeRue
 {
 	Rue = 0,
 	Avenue
 }
-public class addresse
+public class adresse
 {
 	
-	public addresse()
+	public adresse()
 	{
 		//
 		// TODO: Add constructor logic here

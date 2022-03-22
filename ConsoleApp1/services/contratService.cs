@@ -1,19 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 
-/// <summary>
-/// Summary description for Class1
-/// </summary>
-public class prospectService : IService<prospect>
+public class contratService : IService<contrat>
 {
-	public prospectService()
+	public contratService()
 	{
-		//
-		// TODO: Add constructor logic here
-		//
 	}
 
-    public int Create(prospect applicationModel)
+    public int Create(contrat applicationModel)
     {
         throw new NotImplementedException();
     }
@@ -23,22 +17,22 @@ public class prospectService : IService<prospect>
         throw new NotImplementedException();
     }
 
-    public prospect GetByIdAsync(Guid guid)
+    public contrat GetByIdAsync(Guid guid)
     {
         throw new NotImplementedException();
     }
 
-    public prospect GetByNameAsync(string name)
+    public contrat GetByNameAsync(string name)
     {
         throw new NotImplementedException();
     }
 
-    public List<prospect> GetListAsync()
+    public List<contrat> GetListAsync()
     {
         throw new NotImplementedException();
     }
 
-    public bool UpdateAsync(prospect applicationModel)
+    public bool UpdateAsync(contrat applicationModel)
     {
         throw new NotImplementedException();
     }

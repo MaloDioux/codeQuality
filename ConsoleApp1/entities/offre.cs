@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 
 /// <summary>
-/// Summary description for Class1
+/// Summary description for offre
 /// </summary>
-public class offre
+public class offre : baseEntity
 {
 	public offre()
 	{
@@ -30,7 +30,6 @@ public class offre
     public int montant { get; set; }				   
     public string nom { get; set; }					   
     public DateTime dateValidite { get; set; }
-	public List<offre> offresProposer { get; set; }
 	public bool estValider { get; set; }
 
 
