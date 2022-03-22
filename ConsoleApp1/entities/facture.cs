@@ -40,7 +40,8 @@ namespace ConsoleApp1.entities
 		public DateTime datePaiment { get; set; }
 
 		public bool estPayer { get; set; }
-
-        public offre? offre { get; set; }
+#nullable enable
+		public offre? offre { get; set; }
+#nullable disable
 	}
 }
