@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ConsoleApp1.entities;
+using ConsoleApp1.interfaces;
+using System;
 using System.Collections.Generic;
 
 
