@@ -5,10 +5,10 @@ namespace ConsoleApp1.entities
 {
 	public abstract class partenaires : baseEntity
 	{
-		public partenaires()
+		protected partenaires()
 		{
 		}
-		public partenaires(string aRaisonSocial, List<personne> aContacts, DateTime aDateDeContact, adresse aAdresse)
+		protected partenaires(string aRaisonSocial, List<personne> aContacts, DateTime aDateDeContact, adresse aAdresse)
 		{
 			raisonSocial = aRaisonSocial;
 			contacts = aContacts;

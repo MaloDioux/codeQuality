@@ -3,7 +3,7 @@ namespace ConsoleApp1.entities
 {
 	public abstract class baseEntity
 	{
-		public baseEntity()
+		protected baseEntity()
 		{
 		}
 		public Guid id { get; set; }
