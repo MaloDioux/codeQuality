@@ -7,7 +7,6 @@ using System.Collections.Generic;
 /// 
 namespace ConsoleApp1.entities
 {
-#nullable
 	public class offre : baseEntity
 	{
 		public offre()
