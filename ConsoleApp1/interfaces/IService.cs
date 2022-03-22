@@ -1,17 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 
-public interface IService<T>
+
+namespace ConsoleApp1.interfaces
 {
-    int Create(T applicationModel);
+    public interface IService<T>
+    {
+        int Create(T applicationModel);
 
-    bool Delete(Guid guid);
+        bool Delete(Guid guid);
 
-    List<T> GetListAsync();
+        List<T> GetListAsync();
 
-    T GetByIdAsync(Guid guid);
+        T GetByIdAsync(Guid guid);
 
-    T GetByNameAsync(string name);
+        T GetByNameAsync(string name);
 
-    bool UpdateAsync(T applicationModel);
+        bool UpdateAsync(T applicationModel);
+    }
 }
